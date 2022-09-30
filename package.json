@@ -1,0 +1,34 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "clear-all": "php artisan config:clear && php artisan cache:clear && php artisan route:clear"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.0.0",
+        "@fortawesome/fontawesome-free": "^5.15.2",
+        "animate.css": "^4.1.1",
+        "axios": "^0.21",
+        "bootstrap": "^4.6.0",
+        "bootstrap-icons": "^1.3.0",
+        "jquery": "^3.6",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "popper.js": "^1.16.1",
+        "postcss": "^8.1.14",
+        "pusher-js": "^7.0.3",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.32.11",
+        "sass-loader": "^11.0.1",
+        "sweetalert2": "^10.14.1"
+    },
+    "dependencies": []
+}
