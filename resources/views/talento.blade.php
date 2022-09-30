@@ -121,7 +121,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                       <p>&copy; 2021 TalentWork. Todos los derechos reservados. Grupo 5 - MPF - FISI - UNMSM </p>
+                       <p>&copy; 2021 Helpers. Todos los derechos reservados. Grupo 5 - MPF - FISI - UNMSM </p>
                     </div>
                 </div>
 

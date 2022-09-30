@@ -9,7 +9,7 @@
 
     <title>TalenWork</title>
     {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
-    
+
 
     <!-- Scripts -->
     <script src="{{ asset('fortawesome/fontawesome-free/js/all.min.js') }}"></script>
@@ -31,9 +31,9 @@
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }} ">
 
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
-    
+
     <style>
 
     .body{
@@ -99,7 +99,7 @@
                         <a class="nav-link bi bi-table" href="{{ route('tablonservicios') }}"> Tablón</a>
                     @endauth
                 </ul>
-                <p><a class="d-none d-md-block lead mb-0 text-white" href="{{ route('ServiciosOfrecidos') }}"> <em class="fa d-inline fa-lg fa-stop-circle"></em><strong> TalentWork</strong></a> </p>
+                <p><a class="d-none d-md-block lead mb-0 text-white" href="{{ route('ServiciosOfrecidos') }}"> <em class="fa d-inline fa-lg fa-stop-circle"></em><strong> Helpers</strong></a> </p>
                 <ul class="navbar-nav ml-auto">
                     @guest
                         @if (Route::has('login'))
@@ -170,7 +170,7 @@
                                 <li><a href="{{ route('registrouser') }}">Registro</a></li>
                                 @endguest
                                 @auth
-                                
+
                                 <li><a href="{{ route('perfil',Auth::user()->id ) }}">Mi perfil</a></li>
                                 <li><a href="{{ route('perfilH',Auth::user()->id ) }}">Mi historial</a></li>
                                 @endauth
@@ -195,7 +195,7 @@
                             <div class="newsletter-form">
                                 <input type="submit" onclick="window.location.href='{{route('premium')}}'" value="Suscribete">
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="copyright">
-                           <p>&copy; 2021 TalentWork. Todos los derechos reservados. Grupo 5 - MPF - FISI - UNMSM </p>
+                           <p>&copy; 2021 Helpers. Todos los derechos reservados. Grupo 5 - MPF - FISI - UNMSM </p>
                         </div>
                     </div>
 

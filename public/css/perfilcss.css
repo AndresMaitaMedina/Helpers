@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 body {
   background: -webkit-linear-gradient(left, #6d0308, #024f64);
+  background-color: #E0E0E0;
+  font-family: "Roboto", sans-serif;
 }
 
 .emp-profile {
@@ -159,11 +161,6 @@ body {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-}
-
-body {
-  background-color: #E0E0E0;
-  font-family: "Roboto", sans-serif;
 }
 
 a[data-toggle=modal] {

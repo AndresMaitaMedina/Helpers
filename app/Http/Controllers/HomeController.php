@@ -37,7 +37,7 @@ class HomeController extends Controller
     public function showTalentService($randNumber = null){
         $allServices = use_tal::orderBy('created_at','DESC')->where('use_tal_group_payment',false)->paginate(20);
         return view('profileServiceTalent',compact('allServices'));
-    }   
+    }
     // Perfiles de oficios
     public function showOccupationService($randNumber = null){
         $allServices = use_occ::orderBy('created_at','DESC')->where('use_occ_group_payment',false)->paginate(20);
@@ -51,7 +51,7 @@ class HomeController extends Controller
     // Aleatorio
     public function showServicesRandom(){
         $changeAllOcc = use_occ::select('id');
-        $identityChange=mt_rand(1,$changeAllOcc->count());        
+        $identityChange=mt_rand(1,$changeAllOcc->count());
         return redirect()->route('showProfileServiceRetos',$identityChange);
     }
 
@@ -78,7 +78,7 @@ class HomeController extends Controller
         $servicioNuevo -> save();
 
         $servicios = Tablon::all();
-        
+
         return back()->with('agregado', 1)->with('talentos', $talentos)->with('ocupaciones', $ocupaciones)->with('servicios', $servicios)->with('agregado','ok');
     }
 
@@ -99,7 +99,7 @@ class HomeController extends Controller
             $chat = false;
         }else{
             $estadoContrato = Contract::where('use_tal_id',$id)
-                                ->where('use_receive',auth()->user()->id)            
+                                ->where('use_receive',auth()->user()->id)
                                 ->first();
 
             if($estadoContrato){
@@ -126,7 +126,7 @@ class HomeController extends Controller
             $chat = false;
         }else{
             $estadoContrato = Contract::where('use_occ_id',$id)
-                                ->where('use_receive',auth()->user()->id)            
+                                ->where('use_receive',auth()->user()->id)
                                 ->first();
             if($estadoContrato){
                 $contratado = $estadoContrato->con_status;
@@ -155,8 +155,8 @@ class HomeController extends Controller
             'birthdate'=>'required|date|before_or_equal:'.\Carbon\Carbon::now()->subYears(18)->format('Y-m-d'),
             'password'=>'required|string|max:25|confirmed',
             'password_confirmation'=>'required|string|max:25',
-        ]);        
-        $dniApi = null;
+        ]);
+        /*$dniApi = null;
         $response = Http::get('https://consulta.api-peru.com/api/dni/'.$request->dni);
         if($response!=null){
             $dniApi = $response->json();
@@ -165,7 +165,7 @@ class HomeController extends Controller
             // Insertar en caso de encontrar
         }else{
             return back()->withErrors("DNI invalido, no se pudo comprobar la existencia del DNI",'notfound')->withInput();
-        }
+        }*/
 
 
         $user = new User(array(
@@ -179,7 +179,7 @@ class HomeController extends Controller
         ));
 
         $user->save();
-    
+
         return redirect()->route('login');
     }
 }

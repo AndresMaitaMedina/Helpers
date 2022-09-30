@@ -11,7 +11,7 @@ function Registro() {
                 <div class="col-md-3 register-left">
                     <img src="https://previews.123rf.com/images/richmanstudio/richmanstudio1609/richmanstudio160900039/64190298-ilustraci%C3%B3n-de-vector-de-la-silueta-de-perfil-de-un-hombre-sobre-un-fondo-negro.jpg" alt=""/>
                     <h3>Bienvenido</h3>
-                    <p>TalentWork te espera el primer paso es registrarse</p>
+                    <p>Helpers te espera el primer paso es registrarse</p>
                     <input type="submit" name="" value="Login"/><br/>
                 </div>
                 <div class="col-md-9 register-right">
