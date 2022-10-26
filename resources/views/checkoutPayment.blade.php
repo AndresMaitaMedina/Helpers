@@ -156,7 +156,7 @@
                     </div>
 
                     <div class="col-8">
-                        <h2 class="fs-4"> Tu Carrito de TalentWork está vacío</h2>
+                        <h2 class="fs-4"> Tu Carrito de Helpers está vacío</h2>
 
                         <a href="{{url('/talentService') }}" class= "badge badge-light text-dark">Vea nuestros servicios aquí</a>
                     </div>

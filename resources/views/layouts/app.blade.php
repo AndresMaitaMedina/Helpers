@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>TalenWork</title>
+    <title>Helpers</title>
     {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
 
 
@@ -153,7 +153,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="footer-about-us">
-                            <h2>Talent<span>Work</span></h2>
+                            <h2>Helpers<span> </span></h2>
                             <p>Pagina dedicada a publicar servicios de todo tipo, ya sea tecnico o algun oficio</p>
                             <div class="text-center">
                                 {{-- <a class="btn btn-success" href="{{ route('aleatorio') }}">Aleatorio</a> --}}
@@ -206,7 +206,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="copyright">
-                           <p>&copy; 2021 Helpers. Todos los derechos reservados. Grupo 5 - MPF - FISI - UNMSM </p>
+                           <p>&copy; 2022 Helpers. Todos los derechos reservados. Grupo 8 - TSW - FISI - UNMSM </p>
                         </div>
                     </div>
 
